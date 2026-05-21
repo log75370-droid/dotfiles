@@ -1,0 +1,20 @@
+[general]
+
+live-config = 1
+bar_width = 4
+framerate = 144
+
+bar_spacing = 0
+[color]
+gradient = 1
+gradient_count = 3
+gradient_color_1 = '#000000' # Основание (чистый белый)
+gradient_color_2 = '#8a0000' # Середина (светло-красный переходный)
+gradient_color_3 = '#d10000' # Верхушка (темно-красный)
+
+
+[output]
+
+method = ncurses
+
+

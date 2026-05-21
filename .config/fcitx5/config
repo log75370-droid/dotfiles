@@ -1,0 +1,83 @@
+[Hotkey]
+# Осуществлять переключение путем удержания клавиши-модификатора переключения
+EnumerateWithTriggerKeys=True
+# Перечислить методы ввода в прямом порядке
+EnumerateForwardKeys=
+# Перечислить методы ввода в обратном порядке
+EnumerateBackwardKeys=
+# Пропустить первый метод ввода при перечислении
+EnumerateSkipFirst=False
+# Ограничение по времени в миллисекундах для срабатывания комбинаций клавиш-модификаторов
+ModifierOnlyKeyTimeout=250
+
+[Hotkey/TriggerKeys]
+0=Alt+Shift+Alt_L
+1=Zenkaku_Hankaku
+2=Hangul
+
+[Hotkey/ActivateKeys]
+0=Hangul_Hanja
+
+[Hotkey/DeactivateKeys]
+0=Hangul_Romaja
+
+[Hotkey/AltTriggerKeys]
+0=Shift_L
+
+[Hotkey/EnumerateGroupForwardKeys]
+0=Super+space
+
+[Hotkey/EnumerateGroupBackwardKeys]
+0=Shift+Super+space
+
+[Hotkey/PrevPage]
+0=Up
+
+[Hotkey/NextPage]
+0=Down
+
+[Hotkey/PrevCandidate]
+0=Shift+Tab
+
+[Hotkey/NextCandidate]
+0=Tab
+
+[Hotkey/TogglePreedit]
+0=Control+Alt+P
+
+[Behavior]
+# Активен по умолчанию
+ActiveByDefault=False
+# Сбросить состояние при фокусировке
+resetStateWhenFocusIn=No
+# Поделиться состоянием ввода
+ShareInputState=No
+# Показать предварительное редактирование в приложении
+PreeditEnabledByDefault=True
+# Показывать информацию о методе ввода при переключении
+ShowInputMethodInformation=True
+# Показывать информацию о способе ввода при изменении фокуса
+showInputMethodInformationWhenFocusIn=False
+# Показать информацию о компактном методе ввода
+CompactInputMethodInformation=True
+# Показать информацию о первом методе ввода
+ShowFirstInputMethodInformation=True
+# Размер страницы по умолчанию
+DefaultPageSize=5
+# Переопределить параметр XKB
+OverrideXkbOption=False
+# Пользовательский вариант XKB
+CustomXkbOption=
+# Force Enabled Addons
+EnabledAddons=
+# Force Disabled Addons
+DisabledAddons=
+# Preload input method to be used by default
+PreloadInputMethod=True
+# Разрешить метод ввода в поле пароля
+AllowInputMethodForPassword=False
+# Показывать предварительно редактируемый текст при вводе пароля
+ShowPreeditForPassword=False
+# Интервал сохранения пользовательских данных в минутах
+AutoSavePeriod=30
+

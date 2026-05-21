@@ -1,0 +1,15 @@
+include "./cfg/animation.kdl"
+include "./cfg/autostart.kdl"
+include "./cfg/keybinds.kdl"
+include "./cfg/input.kdl"
+include "./cfg/display.kdl"
+include "./cfg/layout.kdl"
+include "./cfg/rules.kdl"
+include "./cfg/misc.kdl"
+spawn-at-startup "bash" "-c" "sleep 2 && qs -c noctalia-shell ipc call lockScreen lock"
+spawn-at-startup "wal" "-R"
+spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP=niri"
+spawn-at-startup "noctalia-shell"
+// Правильный синтаксис запуска Kitty с уникальным классом
+include "./noctalia.kdl"
+

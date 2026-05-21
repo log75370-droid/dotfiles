@@ -1,0 +1,95 @@
+
+[keyboard]
+bindings = [
+    { action = "SpawnNewInstance", key = "Return", mods = "Super|Alt" },
+]
+
+[window]
+decorations = "None"
+[selection]
+save_to_clipboard = true
+
+[cursor.style]
+shape = "Beam"  # "Beam" задает форму вертикальной линии
+blinking = "Off" # "On" включает мигание курсора (можно заменить на "Off" или "Always")
+[cursor]
+thickness = 0.14 # Значение от 0.0 до 1.0 (чем больше, тем толще линия)
+
+
+[scrolling]
+history = 65535
+
+[font]
+size = 11.0
+
+[font.normal]
+family = "JetBrains Mono"
+style = "Regular"
+
+[font.bold]
+family = "JetBrains Mono"
+style = "Bold"
+
+[font.italic]
+family = "JetBrains Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrains Mono"
+style = "Bold Italic"
+
+
+[colors.primary]
+background = "#f0f0f0"  # Чистый белый цвет для фона терминала
+foreground = "#cc0000"  # Цвет для обычного текста (в данном примере — черный)
+
+
+[font.offset]
+x = 0
+y = 0
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[colors.cursor]
+text = "#c95cff"
+cursor = "#000000"
+
+[colors.vi_mode_cursor]
+text = "#112a2a"
+cursor = "#DCDFE4"
+
+[colors.search.matches]
+foreground = "#000000"
+background = "#1AE642"
+
+[colors.search.focused_match]
+foreground = "#000000"
+background = "#ff00ff"
+
+[colors.hints.start]
+foreground = "#1d1f21"
+background = "#1AE642"
+
+[colors.hints.end]
+foreground = "#1AE642"
+background = "#1d1f21"
+
+[colors.line_indicator]
+foreground = "#fa5b1c"
+background = "#1d1f21"
+
+[colors.footer_bar]
+background = "#731d8b"
+foreground = "#ffffff"
+
+[colors.selection]
+text = "#000000"
+background = "#8c0000"
+
+[general]
+import = [
+  "~/.config/alacritty/rose-pine-dawn.toml",
+  "~/.config/alacritty/themes/noctalia.toml"
+]
