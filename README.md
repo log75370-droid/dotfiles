@@ -1,12 +1,12 @@
 use a ./install.sh and move all .config and all what in this repo in your ~ directory
 
-WM: DriftWM
-menu: fuzzel
-terminal: alacritty
-wayland
-shell: zsh
-OS: cachyOS
-video card: Nvidia
+.	WM: DriftWM
+.	menu: fuzzel
+.	terminal: alacritty
+.	wayland
+.	shell: zsh
+.	OS: cachyOS
+.	video card: Nvidia
 
 #################################################################################
 
