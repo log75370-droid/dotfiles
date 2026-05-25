@@ -1,0 +1,36 @@
+{
+    "layer": "top",
+    "position": "top",
+    "exclusive": false,
+    "margin-top": 12,
+    "margin-left": 16,
+    "margin-right": 16,
+    "modules-left": ["cpu", "memory"],
+    "modules-center": ["clock"],
+    "modules-right": ["network", "pulseaudio", "tray"],
+
+    "clock": {
+        "format": " {:%H:%M}",
+        "format-alt": " {:%d.%m.%Y}"
+    },
+    "cpu": {
+        "format": " {usage}%",
+        "interval": 2
+    },
+    "memory": {
+        "format": " {used:0.1f}G"
+    },
+    "network": {
+        "format-wifi": " {essid}",
+        "format-ethernet": "🖧  {ifname}",
+        "format-disconnected": "⚠ Disconnected"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": " Muted",
+        "format-icons": {
+            "default": ["", "", ""]
+        }
+    },
+    }
+}

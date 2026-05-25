@@ -1,0 +1,30 @@
+# ────────────── Настройки навигации по холсту ──────────────
+# ────────────── Настройки навигации по холсту ──────────────
+[navigation]
+friction = 0.5
+
+[navigation.edge_pan]
+zone = 0          # Отключает активную зону авто-скролла у краев экрана в пикселях
+speed_min = 0.0   # Обнуляет минимальную скорость сдвига
+speed_max = 0.0   # Обнуляет максимальную скорость сдвига
+
+# ────────────── Настройки привязки окон ──────────────
+[snap]
+enabled = false   # Полностью отключает магнитное притяжение окон друг к другу
+
+# ────────────── Горячие клавиши (Keybindings) ──────────────
+[keybindings]
+"Super+D"       = "fuzzel"
+"Super+W"       = "wtype -M logo q"
+"Super+T"       = "alacritty"
+"Super+B"       = "firefox"
+"Super+E"       = "nautilus" 
+"Ctrl+Alt+Delete" = "quit"
+"XF86MonBrightnessUp"   = "qs -c noctalia-shell ipc call brightness increase"
+"XF86MonBrightnessDown" = "qs -c noctalia-shell ipc call brightness decrease"
+
+[decorations]
+shadow = false
+
+[background]
+tile_path = "~/Pictures/2.png"

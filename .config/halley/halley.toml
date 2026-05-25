@@ -1,0 +1,125 @@
+# ==========================================
+# СТИЛИЗАЦИЯ И СВЕЧЕНИЕ ОКОН (Glow Эффект)
+# ==========================================
+[style.border]
+width = 2.0
+active_color = [0.72, 0.65, 0.85, 1.0]   # Светло-лавандовая рамка фокусного окна
+inactive_color = [0.25, 0.25, 0.3, 0.4]  # Пассивные рамки
+
+[style.shadow]
+enable = true
+blur = 35.0              # Радиус размытия (очень мягкие белые тени)
+spread = 2.0             # Расширение свечения
+color = [1.0, 1.0, 1.0, 0.45] # Чистый БЕЛЫЙ цвет (RGBA) для свечения
+offset = [0.0, 0.0]      # Центрирование тени (0.0 делает её равномерным свечением)
+
+[style]
+radius = 12.0            # Скругление углов окон
+
+# ==========================================
+# ГОРЯЧИЕ КЛАВИШИ (Keybinds)
+# ==========================================
+[[keybinds]]
+mods = ["Super", "Shift"]
+key = "r"
+action = "ReloadConfig" # Перезагрузить конфиг
+
+[[keybinds]]
+mods = ["Super", "Shift"]
+key = "e"
+action = "QuitHalley"    # Выйти из композитора
+
+[[keybinds]]
+mods = ["Super"]
+key = "w"
+action = "CloseFocused"   # Win + W — Закрыть окно
+
+[[keybinds]]
+mods = ["Super"]
+key = "n"
+action = "ToggleState"    # Переключить состояние (Плавающее/Тайлинг)
+
+[[keybinds]]
+mods = ["Super"]
+key = "t"
+action = { Spawn = ["alacritty"] } # Win + T — Эмулятор терминала
+
+[[keybinds]]
+mods = ["Super"]
+key = "d"
+action = { Spawn = ["fuzzel"] }    # Win + D — Меню запуска Fuzzel
+
+# Перемещение окон и фокуса клавиатурой (стандартные стрелочки)
+[[keybinds]]
+mods = ["Super"]
+key = "Left"
+action = "FocusTileLeft"
+
+[[keybinds]]
+mods = ["Super"]
+key = "Right"
+action = "FocusTileRight"
+
+[[keybinds]]
+mods = ["Super"]
+key = "Up"
+action = "FocusTileUp"
+
+[[keybinds]]
+mods = ["Super"]
+key = "Down"
+action = "FocusTileDown"
+
+# Мультимедиа клавиши (Громкость)
+[[keybinds]]
+mods = []
+key = "XF86AudioRaiseVolume"
+action = "RaiseVolume"
+
+[[keybinds]]
+mods = []
+key = "XF86AudioLowerVolume"
+action = "LowerVolume"
+
+[[keybinds]]
+mods = []
+key = "XF86AudioMute"
+action = "ToggleMute"
+
+# ==========================================
+# ДЕЙСТВИЯ МЫШИ (Mousebinds)
+# ==========================================
+# Масштабирование (Zoom) холста
+[[mousebinds]]
+mods = ["Super"]
+button = "MouseWheelUp"
+action = "ZoomIn"        # Win + Колёсико вверх — Приблизить
+
+[[mousebinds]]
+mods = ["Super"]
+button = "MouseWheelDown"
+action = "ZoomOut"       # Win + Колёсико вниз — Отдалить
+
+[[mousebinds]]
+mods = ["Super"]
+button = "MiddleMouse"
+action = "ResetZoom"     # Win + Клик колёсиком — Сброс зума
+
+# Навигация и манипуляция окнами
+[[mousebinds]]
+mods = ["Super"]
+button = "Left"
+action = "PanCanvas"     # Win + ЛКМ — Перемещение холста
+
+[[mousebinds]]
+mods = ["Super", "Shift"]
+button = "Left"
+action = "MoveWindow"    # Win + Shift + ЛКМ — Перемещение окна
+
+[[mousebinds]]
+mods = ["Super"]
+button = "Right"
+action = "ResizeWindow"  # Win + ПКМ — Изменение размера окна
+[input.keyboard]
+layout = "us,ru"
+options = "grp:alt_shift_toggle"

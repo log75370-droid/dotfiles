@@ -1,0 +1,10 @@
+# Пример бело-фиолетовой пастельной гаммы
+borders:
+  color: "Magenta"     # Фиолетовые границы окон
+text:
+  color: "Black"       # Темный текст для белого фона Alacritty
+selection:
+  fg: "White"
+  bg: "Magenta"       # Фиолетовое выделение строк
+headers:
+  color: "Magenta"     # Заголовки списков

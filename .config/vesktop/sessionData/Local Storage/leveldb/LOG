@@ -1,0 +1,78 @@
+2026/05/25-06:14:37.674 6a7 Reusing MANIFEST /home/doogike/.config/vesktop/sessionData/Local Storage/leveldb/MANIFEST-000001
+2026/05/25-06:14:37.681 6a7 Recovering log #103
+2026/05/25-06:14:37.681 6a7 Reusing old log /home/doogike/.config/vesktop/sessionData/Local Storage/leveldb/000103.log 
+2026/05/25-06:20:38.043 6a4 Level-0 table #107: started
+2026/05/25-06:20:38.046 6a4 Level-0 table #107: 32482 bytes OK
+2026/05/25-06:20:38.049 6a4 Delete type=0 #103
+2026/05/25-06:20:38.049 6a4 Compacting 4@0 + 1@1 files
+2026/05/25-06:20:38.054 6a4 Generated table #108@0: 36 keys, 134268 bytes
+2026/05/25-06:20:38.054 6a4 Compacted 4@0 + 1@1 files => 134268 bytes
+2026/05/25-06:20:38.057 6a4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/05/25-06:20:38.057 6a4 Delete type=2 #98
+2026/05/25-06:20:38.058 6a4 Delete type=2 #100
+2026/05/25-06:20:38.058 6a4 Delete type=2 #102
+2026/05/25-06:20:38.058 6a4 Delete type=2 #104
+2026/05/25-06:20:38.058 6a4 Delete type=2 #107
+2026/05/25-06:26:38.043 6a4 Level-0 table #110: started
+2026/05/25-06:26:38.045 6a4 Level-0 table #110: 36490 bytes OK
+2026/05/25-06:26:38.050 6a4 Delete type=0 #106
+2026/05/25-06:27:38.043 6a4 Level-0 table #112: started
+2026/05/25-06:27:38.046 6a4 Level-0 table #112: 46918 bytes OK
+2026/05/25-06:27:38.049 6a4 Delete type=0 #109
+2026/05/25-06:33:38.044 6a4 Level-0 table #114: started
+2026/05/25-06:33:38.046 6a4 Level-0 table #114: 36262 bytes OK
+2026/05/25-06:33:38.049 6a4 Delete type=0 #111
+2026/05/25-06:34:38.043 6a4 Level-0 table #116: started
+2026/05/25-06:34:38.045 6a4 Level-0 table #116: 47235 bytes OK
+2026/05/25-06:34:38.048 6a4 Delete type=0 #113
+2026/05/25-06:34:38.048 6a4 Compacting 4@0 + 1@1 files
+2026/05/25-06:34:38.053 6a4 Generated table #117@0: 36 keys, 134260 bytes
+2026/05/25-06:34:38.053 6a4 Compacted 4@0 + 1@1 files => 134260 bytes
+2026/05/25-06:34:38.056 6a4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/05/25-06:34:38.056 6a4 Delete type=2 #108
+2026/05/25-06:34:38.056 6a4 Delete type=2 #110
+2026/05/25-06:34:38.056 6a4 Delete type=2 #112
+2026/05/25-06:34:38.056 6a4 Delete type=2 #114
+2026/05/25-06:34:38.057 6a4 Delete type=2 #116
+2026/05/25-06:40:38.043 6a4 Level-0 table #119: started
+2026/05/25-06:40:38.046 6a4 Level-0 table #119: 36104 bytes OK
+2026/05/25-06:40:38.051 6a4 Delete type=0 #115
+2026/05/25-06:46:38.044 6a4 Level-0 table #121: started
+2026/05/25-06:46:38.046 6a4 Level-0 table #121: 36334 bytes OK
+2026/05/25-06:46:38.049 6a4 Delete type=0 #118
+2026/05/25-06:51:38.043 6a4 Level-0 table #123: started
+2026/05/25-06:51:38.046 6a4 Level-0 table #123: 30775 bytes OK
+2026/05/25-06:51:38.049 6a4 Delete type=0 #120
+2026/05/25-06:56:38.043 6a4 Level-0 table #125: started
+2026/05/25-06:56:38.046 6a4 Level-0 table #125: 30809 bytes OK
+2026/05/25-06:56:38.049 6a4 Delete type=0 #122
+2026/05/25-06:56:38.050 6a4 Compacting 4@0 + 1@1 files
+2026/05/25-06:56:38.055 6a4 Generated table #126@0: 36 keys, 134392 bytes
+2026/05/25-06:56:38.055 6a4 Compacted 4@0 + 1@1 files => 134392 bytes
+2026/05/25-06:56:38.058 6a4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/05/25-06:56:38.058 6a4 Delete type=2 #117
+2026/05/25-06:56:38.058 6a4 Delete type=2 #119
+2026/05/25-06:56:38.058 6a4 Delete type=2 #121
+2026/05/25-06:56:38.059 6a4 Delete type=2 #123
+2026/05/25-06:56:38.059 6a4 Delete type=2 #125
+2026/05/25-07:00:38.043 6a4 Level-0 table #128: started
+2026/05/25-07:00:38.046 6a4 Level-0 table #128: 32569 bytes OK
+2026/05/25-07:00:38.049 6a4 Delete type=0 #124
+2026/05/25-07:05:38.043 6a4 Level-0 table #130: started
+2026/05/25-07:05:38.046 6a4 Level-0 table #130: 31977 bytes OK
+2026/05/25-07:05:38.049 6a4 Delete type=0 #127
+2026/05/25-07:11:38.044 6a4 Level-0 table #132: started
+2026/05/25-07:11:38.046 6a4 Level-0 table #132: 41926 bytes OK
+2026/05/25-07:11:38.051 6a4 Delete type=0 #129
+2026/05/25-07:16:38.043 6a4 Level-0 table #134: started
+2026/05/25-07:16:38.046 6a4 Level-0 table #134: 30896 bytes OK
+2026/05/25-07:16:38.049 6a4 Delete type=0 #131
+2026/05/25-07:16:38.049 6a4 Compacting 4@0 + 1@1 files
+2026/05/25-07:16:38.055 6a4 Generated table #135@0: 38 keys, 135112 bytes
+2026/05/25-07:16:38.056 6a4 Compacted 4@0 + 1@1 files => 135112 bytes
+2026/05/25-07:16:38.058 6a4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/05/25-07:16:38.059 6a4 Delete type=2 #126
+2026/05/25-07:16:38.059 6a4 Delete type=2 #128
+2026/05/25-07:16:38.059 6a4 Delete type=2 #130
+2026/05/25-07:16:38.059 6a4 Delete type=2 #132
+2026/05/25-07:16:38.059 6a4 Delete type=2 #134

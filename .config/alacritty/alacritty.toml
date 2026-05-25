@@ -1,0 +1,55 @@
+[general]
+import = ["~/.config/alacritty/themes/noctalia.toml"]
+
+
+[keyboard]
+bindings = [
+    { action = "SpawnNewInstance", key = "Return", mods = "Super|Alt" },
+]
+
+[selection]
+save_to_clipboard = true
+
+[cursor.style]
+shape = "Beam"  # "Beam" задает форму вертикальной линии
+blinking = "Off" # "On" включает мигание курсора (можно заменить на "Off" или "Always")
+[cursor]
+thickness = 0.14 # Значение от 0.0 до 1.0 (чем больше, тем толще линия)
+
+
+[scrolling]
+history = 65535
+
+[font]
+size = 13.0
+[window]
+decorations = "None"
+
+
+[colors.primary]
+background = "#faf8fc" # Мягкий белый с фиолетовым отливом
+foreground = "#4a3e56" # Темно-фиолетовый текст для контраста
+
+[colors.cursor]
+text = "#faf8fc"
+cursor = "#9d7cd8" # Пастельный фиолетовый курсор
+
+[colors.normal]
+black = "#4a3e56"
+red = "#ff757f"
+green = "#c3e88d"
+yellow = "#ffc777"
+blue = "#82a1f1"
+magenta = "#b4befe" # Нежно-пурпурный
+cyan = "#86e1fc"
+white = "#e0def4"
+
+[colors.bright]
+black = "#6c5d79"
+red = "#ff98a1"
+green = "#d4f1aa"
+yellow = "#ffe0b2"
+blue = "#a4bdf6"
+magenta = "#cba6f7" # Светло-фиолетовый
+cyan = "#b1ebfc"
+white = "#f2f0f5"

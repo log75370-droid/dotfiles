@@ -1,0 +1,16 @@
+[general]
+
+live-config = 1
+bar_width = 8
+framerate = 144
+
+bar_spacing = 0
+[color]
+color_1 = '#5f4a75' # Основание (чистый белый)
+
+
+[output]
+
+method = ncurses
+
+

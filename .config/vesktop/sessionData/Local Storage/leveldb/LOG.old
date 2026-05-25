@@ -1,0 +1,45 @@
+2026/05/25-05:29:28.068 a183 Reusing MANIFEST /home/doogike/.config/vesktop/sessionData/Local Storage/leveldb/MANIFEST-000001
+2026/05/25-05:29:28.075 a183 Recovering log #82
+2026/05/25-05:29:28.076 a183 Reusing old log /home/doogike/.config/vesktop/sessionData/Local Storage/leveldb/000082.log 
+2026/05/25-05:30:28.081 a183 Level-0 table #86: started
+2026/05/25-05:30:28.085 a183 Level-0 table #86: 94581 bytes OK
+2026/05/25-05:30:28.089 a183 Delete type=0 #82
+2026/05/25-05:31:28.600 a183 Level-0 table #88: started
+2026/05/25-05:31:28.603 a183 Level-0 table #88: 43606 bytes OK
+2026/05/25-05:31:28.606 a183 Delete type=0 #85
+2026/05/25-05:31:28.606 a183 Compacting 4@0 + 1@1 files
+2026/05/25-05:31:28.611 a183 Generated table #89@0: 36 keys, 134107 bytes
+2026/05/25-05:31:28.612 a183 Compacted 4@0 + 1@1 files => 134107 bytes
+2026/05/25-05:31:28.614 a183 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/05/25-05:31:28.615 a183 Delete type=2 #79
+2026/05/25-05:31:28.615 a183 Delete type=2 #81
+2026/05/25-05:31:28.615 a183 Delete type=2 #83
+2026/05/25-05:31:28.615 a183 Delete type=2 #86
+2026/05/25-05:31:28.615 a183 Delete type=2 #88
+2026/05/25-05:37:28.599 a183 Level-0 table #91: started
+2026/05/25-05:37:28.602 a183 Level-0 table #91: 36671 bytes OK
+2026/05/25-05:37:28.606 a183 Delete type=0 #87
+2026/05/25-05:43:28.600 a183 Level-0 table #93: started
+2026/05/25-05:43:28.602 a183 Level-0 table #93: 36703 bytes OK
+2026/05/25-05:43:28.606 a183 Delete type=0 #90
+2026/05/25-05:49:28.598 a161 Level-0 table #95: started
+2026/05/25-05:49:28.602 a161 Level-0 table #95: 36645 bytes OK
+2026/05/25-05:49:28.606 a161 Delete type=0 #92
+2026/05/25-05:54:28.599 a161 Level-0 table #97: started
+2026/05/25-05:54:28.601 a161 Level-0 table #97: 31180 bytes OK
+2026/05/25-05:54:28.604 a161 Delete type=0 #94
+2026/05/25-05:54:28.604 a161 Compacting 4@0 + 1@1 files
+2026/05/25-05:54:28.609 a161 Generated table #98@0: 36 keys, 134235 bytes
+2026/05/25-05:54:28.609 a161 Compacted 4@0 + 1@1 files => 134235 bytes
+2026/05/25-05:54:28.612 a161 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/05/25-05:54:28.613 a161 Delete type=2 #89
+2026/05/25-05:54:28.613 a161 Delete type=2 #91
+2026/05/25-05:54:28.613 a161 Delete type=2 #93
+2026/05/25-05:54:28.613 a161 Delete type=2 #95
+2026/05/25-05:54:28.613 a161 Delete type=2 #97
+2026/05/25-06:00:28.599 a183 Level-0 table #100: started
+2026/05/25-06:00:28.601 a183 Level-0 table #100: 36521 bytes OK
+2026/05/25-06:00:28.604 a183 Delete type=0 #96
+2026/05/25-06:06:28.598 a161 Level-0 table #102: started
+2026/05/25-06:06:28.601 a161 Level-0 table #102: 36504 bytes OK
+2026/05/25-06:06:28.603 a161 Delete type=0 #99

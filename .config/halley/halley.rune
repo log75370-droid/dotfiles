@@ -1,0 +1,326 @@
+keybinds:
+  mod "super"
+
+  "$var.mod+shift+r" "reload"
+  "$var.mod+shift+e" "quit"
+  "$var.mod+t" "alacritty"
+  "$var.mod+d" "fuzzel"
+  "$var.mod+w" "close-focused"
+  "$var.mod+p" "toggle-focused-pin"
+
+  "$var.mod+leftmouse" "move-window"
+  "$var.mod+rightmouse" "resize-window"
+
+  # Бинды для управления масштабом холста
+  "$var.mod+mousewheelup" "zoom-in"
+  "$var.mod+mousewheeldown" "zoom-out"
+  "$var.mod+middlemouse" "reset-zoom"
+
+  "alt+tab" "cycle-focus"
+  "alt+shift+tab" "cycle-focus-backward"
+
+  "$var.mod+m" "maximize-focused"
+  "$var.mod+1" "cluster slot 1"
+  "$var.mod+2" "cluster slot 2"
+  "$var.mod+3" "cluster slot 3"
+  "$var.mod+4" "cluster slot 4"
+  "$var.mod+5" "cluster slot 5"
+  "$var.mod+6" "cluster slot 6"
+  "$var.mod+7" "cluster slot 7"
+  "$var.mod+8" "cluster slot 8"
+  "$var.mod+9" "cluster slot 9"
+  "$var.mod+0" "cluster slot 10"
+end
+# Cursor settings apply to the compositor itself and child apps started by Halley.
+# `hide-when-typing` is useful when you mostly drive the field with the keyboard.
+cursor:
+  theme "ArcDusk-cursors"
+  size 24
+  hide-when-typing true
+  hide-after-ms 2000
+end
+
+# Keyboard repeat and pointer-driven focus behavior.
+# `focus-mode "click"` preserves the existing click-to-focus behavior.
+input:
+  repeat-rate 30
+  repeat-delay 500
+  focus-mode "click"
+  keyboard:
+    layout "us"
+    variant ""
+    options ""
+  end
+end
+
+# Default font used for compositor UI like labels and overlays.
+font:
+  family "monospace"
+  size 11
+end
+
+# Where screenshots taken through Halley are saved.
+# Use an absolute path or an env-expanded path like `$env.HOME/...`.
+screenshot:
+  directory "$env.HOME/Pictures/Screenshots/"
+end
+
+# A viewport represents one monitor/output.
+# On first tty launch Halley writes the detected outputs here for you.
+# If you want to manage monitors manually later, edit this section.
+viewport:
+  HDMI-A-1:
+    enabled true
+
+    offset-x 0
+    offset-y 0
+
+    width 2560
+    height 1440
+
+    rate 60.000
+    transform 0
+    vrr "off"
+    # The focus ring is Halley's active zone.
+    # Windows inside it stay more fully active.
+    # Windows outside it may decay into nodes depending on config.
+    focus-ring:
+      primary-rx 820.0
+      primary-ry 420.0
+      offset-x 0
+      offset-y 0
+    end
+  end
+  # Example second monitor configuration.
+  # Uncomment and edit if needed.
+  #DP-2:
+  #  enabled true
+  #
+  #  offset-x 0
+  #  offset-y 0
+  #
+  #  width 1920
+  #  height 1200
+  #
+  #  rate 75.0
+  #  transform 0
+  #  vrr "off"
+  #
+  #  focus-ring:
+  #    primary-rx 820.0
+  #    primary-ry 420.0
+  #    offset-x 0
+  #    offset-y 0
+  #  end
+  #end
+
+end
+
+# The field is Halley's spatial world for a monitor.
+# Windows live on this field instead of being arranged into fixed desktops.
+field:
+  # Gap in pixels between windows and layout elements.
+  gap 20.0
+  # Maximum number of non-node windows allowed on the Field before decay takes over.
+  # Set to 0 to disable decay entirely.
+  active-windows-allowed 5
+  # How aggressively the camera pans to newly opened windows.
+  pan-to-new "if-needed"
+  # Pinned windows/nodes stay locked in place and remain visible in Bearings.
+  pins:
+    corner "top-right"
+    colour "auto"
+    background-colour "auto"
+    # Scale for the circular pin badge and glyph.
+    size 1.0
+  end
+  close-restore-focus true
+  close-restore-pan "if-offscreen"
+
+  zoom:
+    enabled true
+    step 1.10
+    min 0.35
+    max 1.35
+    smooth true
+    smooth-rate 12.5
+  end
+end
+
+# A node is Halley's collapsed representation of a window.
+# When a window is no longer active enough to stay expanded,
+# it can decay into a compact node that still exists on the field.
+node:
+  # Keep nodes recognizable without making the field too noisy.
+  show-labels "hover"
+  # `always`, `hover`, or `off` for real app icons. Halley falls back to
+  # the app-id initial when an icon is unavailable or intentionally hidden.
+  show-app-icons "always"
+
+  node-shape "square"
+  node-label-shape "square"
+
+  # Size is a fraction of the node diameter.
+  icon-size 0.72
+
+  # Auto tints the node fill from its border colour.
+  background-colour "auto"
+
+  # Border colour source for hovered/inactive nodes.
+  # Allowed values: "use-window-active", "use-window-inactive",
+  # "use-window-secondary-active", "use-window-secondary-inactive".
+  border-colour-hover "use-window-active"
+  border-colour-inactive "use-window-inactive"
+
+  click-collapsed-outside-focus "activate"
+  click-collapsed-pan "if-offscreen"
+end
+
+# Decay controls how windows transition between active, inactive,
+# and collapsed states.
+# Lower values make Halley condense inactive work more quickly.
+decay:
+  active-delay 240
+  inactive-delay 120
+end
+
+# Trail is Halley's navigation history.
+# Think back/forward through previously focused places or windows.
+trail:
+  history-length 25
+  wrap true
+end
+
+# Bearings are directional indicators for offscreen things.
+# They can show both labels and distance to help you re-orient quickly.
+bearings:
+  show-distance true
+  show-icons true
+  show-pinned true
+  fade-distance 1200
+end
+
+# Clusters are Halley's workspace-like grouping system.
+# Unlike traditional workspaces, clusters live in the field.
+clusters:
+  cluster-dwell-ms 2000
+  distance-px 280.0
+  bloom-direction "clockwise"
+  show-icons true
+  default-layout "stacking"
+end
+
+# Settings for tiled layout inside a cluster.
+tile:
+  new-on-top false
+  gaps-inner 20
+  gaps-outer 20
+  max-stack 4
+  queue-show-icons true
+end
+
+# Settings for stacking layout inside a cluster.
+stacking:
+  max-visible 5
+end
+
+# Halley can use gentle physics-style motion instead of purely rigid snapping.
+physics:
+  enabled true
+  damping 0.45
+end
+
+# Animation controls for window and layout transitions.
+animations:
+  enabled true
+
+  smooth-resize:
+    enabled true
+    duration-ms 90  # lower = tighter, higher = softer
+  end
+
+  maximize:
+    enabled true
+    duration-ms 240
+  end
+
+  window-open:
+    enabled true
+    duration-ms 620
+  end
+
+  window-close:
+    enabled true
+    duration-ms 270
+    style "shrink"
+  end
+
+  tile:
+    enabled true
+    duration-ms 240
+  end
+
+  stack:
+    enabled true
+    duration-ms 220
+  end
+end
+
+# Styling for compositor-drawn overlays like labels and helper UI.
+overlays:
+  background-colour "auto"
+  text-colour "auto"
+  error-colour "#fb4934"
+  shape "square"
+  borders "true"
+  border-source "primary"
+end
+
+# Compositor-owned window borders managed by Halley.
+decorations:
+  border:
+    size 3
+    radius 0
+    colour-focused "#d65d26"
+    colour-unfocused "#333333"
+  end
+
+  secondary-border:
+    enabled false
+    size 1
+    gap 2
+    colour-focused "#fabd2f"
+    colour-unfocused "#1f1f1f"
+  end
+
+  shadows:
+    window:
+      enabled true
+      blur-radius 8
+      spread 0
+      offset-x 0
+      offset-y 5
+      colour "#05030530"
+    end
+
+    node:
+      enabled true
+      blur-radius 14
+      spread 0
+      offset-x 0
+      offset-y 3
+      colour "#05030524"
+    end
+
+    overlay:
+      enabled true
+      blur-radius 24
+      spread 1
+      offset-x 0
+      offset-y 7
+      colour "#05030538"
+    end
+  end
+
+  resize-using-border true
+end

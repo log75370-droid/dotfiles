@@ -1,0 +1,4 @@
+spawn-sh-at-startup "qs -c noctalia-shell"
+
+// Запуск Джарвиса через фоновую сессию шелла, одобренную блоком автостарта Niri
+spawn-sh-at-startup "kitty --class jarvis-float -e bash -c 'cd /home/doogike/Jarvis_linux && ./venv/bin/python jarvis_system.py'"
